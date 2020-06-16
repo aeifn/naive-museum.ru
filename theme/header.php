@@ -15,8 +15,8 @@
   <header class="container">
 	<div class="row">
 		<div class="col-md-6">
-		<div><a href="http://mos.ru/kultura">DEPCULT</a></div>
-		<div><a href="/">LOGO</a></div>
+		<div><a href="http://mos.ru/kultura"><img src="/wp-content/themes/mrlini/img/depcult.png"></a></div>
+		<div><a href="/"><img src="/wp-content/themes/mrlini/img/logo.png" class="img-fluid" alt="Responsive image"></a></div>
 		</div>
 		<div class="col-md-6">
 			<!-- Служебные ссылки -->
@@ -32,7 +32,7 @@
 			<div class="row">
 			SOCIAL
 			</div>
-			
+
 		</div>
 	</div>
 
