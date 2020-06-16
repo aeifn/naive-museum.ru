@@ -1,0 +1,26 @@
+
+.tile {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+
+.tile:hover .hover {
+  display: block;
+}
+
+.tile .hover {
+  //display: none;
+  color: $white;
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+  vertical-align: top;
+  padding: 20px;
+  overflow: hidden;
+}
+
+// Round-shaped rectangle
+.tile, .hover {
+  border-radius: 0px 20px 25px 25px;
+}
