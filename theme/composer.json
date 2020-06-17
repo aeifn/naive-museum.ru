@@ -1,0 +1,13 @@
+{
+    "name": "aeifn/mrlini",
+    "authors": [
+        {
+            "name": "Egor Kuzmichev",
+            "email": "egor@math.ru"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "joshtronic/php-loremipsum": "^1.0"
+    }
+}
