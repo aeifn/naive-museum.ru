@@ -16,6 +16,7 @@ services:
     volumes:
       - wordpress:/var/www/html
       - ./theme:/var/www/html/wp-content/themes/mrlini
+      - ./plugins:/var/www/html/wp-content/plugins
 
   db:
     image: mysql:5.7
@@ -27,6 +28,7 @@ services:
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
       - db:/var/lib/mysql
+      - ./dump:/docker-entrypoint-initdb.d
 
 volumes:
   wordpress:
