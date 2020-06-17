@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <script src="/wp-content/themes/mrlini/dist/main.js"></script>
   <?php wp_head(); ?>
@@ -12,13 +12,16 @@
   wp_body_open();
   ?>
 
-  <header class="container">
+  <header>
+  <div class="container">
 	<div class="row">
-		<div class="col-md-6">
-		<div><a href="http://mos.ru/kultura"><img src="/wp-content/themes/mrlini/img/depcult.png"></a></div>
-		<div><a href="/"><img src="/wp-content/themes/mrlini/img/logo.png" class="img-fluid" alt="Responsive image"></a></div>
+		<div class="col-md-5">
+		<div><a href="http://mos.ru/kultura"><img src="<?= get_template_directory_uri() . '/img/depcult.png' ?>"></a></div>
+		<div>
+      <a href="/"><img src="<?= get_template_directory_uri() . '/img/logo.png' ?>" class="img-fluid"></a>
+    </div>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 offset-md-1">
 			<!-- Служебные ссылки -->
 			<div class="row">
 			<div class="col-md-6"><a href="#">Summary</a></div>
@@ -35,6 +38,12 @@
 
 		</div>
 	</div>
+</div>
 
+<?php wp_nav_menu(
+      array(
+    'theme_location' => 'primary'
+  )
+  ); ?>
 
   </header>
