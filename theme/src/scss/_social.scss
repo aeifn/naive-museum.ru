@@ -1,0 +1,38 @@
+.social-menu {
+  margin: 0;
+  padding: 0;
+
+
+  a {
+    @extend .badge;
+    border: $stroke;
+    line-height: 40px;
+  }
+
+  a:hover {
+    color: $white;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 0;
+  }
+
+  .instagram:hover a {
+    background: rgb(192, 64, 113);
+  }
+
+  .youtube:hover a {
+    background: rgb(234, 54, 29);
+  }
+
+  .facebook:hover a {
+    background: rgb(70, 137, 248);
+  }
+
+  .vk:hover a {
+    background: rgb(84, 116, 164);
+  }
+
+}

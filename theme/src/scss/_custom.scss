@@ -1,6 +1,8 @@
+
 // Required
 @import '~bootstrap/scss/_functions';
 @import '~bootstrap/scss/_variables';
+@import './_vars';
 @import '~bootstrap/scss/_mixins';
 
 @import '~bootstrap/scss/_reboot';
@@ -13,8 +15,12 @@
 @import '~bootstrap/scss/_tables';
 
 
-@import './_vars';
+
 @import './_card';
 @import './_menu';
 @import './_table';
+<<<<<<< HEAD
 @import './_header';
+=======
+@import './_social';
+>>>>>>> upstream/master
