@@ -1,20 +1,25 @@
-header .menu li {
-  display: inline-block;
-  padding: 40px;
-}
+#menu-main {
 
-header .menu {
   text-align: center;
-  border-bottom: $stroke;
-  border-top: $stroke;
   margin-top:30px;
   margin-bottom:30px;
-}
 
-li.active a {
-  @extend .active;
-}
+  li {
+    margin: 0 50px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: "Cuprum";
+    a {
+      color: black;
+    }
+  }
 
-.menu-main-1 {
-  @extend .mx-auto;
+  .current-menu-item {
+    background: gray;
+    border-radius: 30px;
+    font-weight: bold;
+  }
+
 }
