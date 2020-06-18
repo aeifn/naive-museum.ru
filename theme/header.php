@@ -21,7 +21,7 @@
             <!-- Служебные ссылки -->
             <div class="row">
             <div class="col-md-6"><a href="#">Summary</a></div>
-            <div class="col-md-6 d-none d-md-block"><a href="#">Версия для слабовидящих</a></div>
+            <div class="col-md-6 d-none d-md-block visually_impaired_link"><a href="#">Версия для слабовидящих</a></div>
             </div>
             <!-- Поиск -->
             <div class="row">
