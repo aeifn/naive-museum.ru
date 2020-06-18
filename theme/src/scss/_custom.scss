@@ -1,3 +1,5 @@
+// Fonts
+@import "~fontsource-cuprum/cyrillic-ext.css";
 
 // Required
 @import '~bootstrap/scss/_functions';
@@ -20,3 +22,4 @@
 @import './_menu';
 @import './_table';
 @import './_social';
+@import './fonts';
