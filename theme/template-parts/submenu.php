@@ -1,4 +1,5 @@
 <?php
- $a=wp_nav_menu(array (
-  'start_depth'=> 1,
-) ); ?>
+ wp_nav_menu(array (
+  'start_depth' => 1,
+  'menu_id'     => 'submenu'
+) );

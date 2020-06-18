@@ -1,25 +1,42 @@
-#menu-main {
-
-  text-align: center;
+.menu-main {
   margin-top:30px;
   margin-bottom:30px;
-
+  text-align: center;
+  padding: 0;
   li {
-    margin: 0 50px;
     display: inline-block;
-    padding: 10px;
-    font-size: 24px;
-    line-height: 28px;
+    padding: 3px 15px;
+    font-size: $menu-font-size;
     font-family: "Cuprum";
     a {
       color: black;
     }
+    a:hover {
+      text-decoration:none;
+      color: #666;
+    }
   }
 
-  .current-menu-item {
+  .current-menu-item, .current-menu-parent {
     background: gray;
     border-radius: 30px;
-    font-weight: bold;
+    a:hover {
+      color:black;
+    }
   }
-  
+}
+
+#mainmenu {
+  @extend .menu-main;
+  li {
+    margin: 0 20px;
+  }
+}
+
+#submenu {
+  @extend .menu-main;
+  li {
+    margin: 0 10px;
+  }
+
 }
