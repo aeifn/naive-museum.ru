@@ -1,4 +1,4 @@
-$stroke: 1px solid #B9B9B9;
+
 $font-size-base: 18;
 $badge-font-size: $font-size-base;
 $badge-font-weight: normal;
@@ -6,6 +6,11 @@ $badge-padding-x: 18px;
 
 $red: #D62B30;
 $primary: $red;
+
+$stroke-color: #B9B9B9;
+$stroke-color-1: #888888;
+
+$stroke: 1px solid $stroke-color;
 
 $link-color: $blue;
 

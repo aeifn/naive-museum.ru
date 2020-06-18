@@ -1,12 +1,12 @@
-.social-menu {
+#menu-social {
   margin: 0;
   padding: 0;
-
 
   a {
     @extend .badge;
     border: $stroke;
-    line-height: 40px;
+    line-height: 30px;
+    border-radius: 20px;
   }
 
   a:hover {
@@ -15,8 +15,12 @@
 
   li {
     display: inline-block;
-    margin-right: 10px;
-    margin-left: 0;
+    margin-bottom:5px;
+
+  }
+
+  .goskatalog:hover a {
+    background: rgb(160,160,160);
   }
 
   .instagram:hover a {
@@ -34,5 +38,4 @@
   .vk:hover a {
     background: rgb(84, 116, 164);
   }
-
 }
