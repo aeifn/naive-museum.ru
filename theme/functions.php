@@ -45,6 +45,14 @@ add_action( 'init', 'mrlini_menus' );
  */
 function twentytwenty_sidebar_registration() {
 
+  // Footer #1.
+	register_sidebar(
+			array(
+				'name'        => 'Сайдбар #1',
+				'id'          => 'sidebar-1',
+			)
+	);
+
 	// Footer #1.
 	register_sidebar(
 			array(

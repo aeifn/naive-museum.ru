@@ -1,21 +1,7 @@
-<?php get_header() ; ?>
-  <div class="container mt-4">
-    <div class="row">
-      <div class="col-md-4">
-        <?php get_sidebar(); ?>
-      </div>
-      <div class="col-md-8">
-        <!-- Плитка -->
-        <div class="row ">
-          <?php while (have_posts()): ?>
-            <div class="col-md-6 d-flex">
-              <?php the_post();
-              get_template_part('template-parts/card');
-              ?>
-            </div>
-          <?php endwhile ?>
-        </div>
-      </div>
-    </div>
-  </div>
-<?php get_footer(); ?>
+<?php get_header();
+if(is_category()) {
+  get_template_part( 'template-parts/archive-2' );
+} else {
+  get_template_part( 'template-parts/archive-3' );
+}
+get_footer();
