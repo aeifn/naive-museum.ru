@@ -3,43 +3,23 @@
   text-align: center;
   margin-top:30px;
   margin-bottom:30px;
-<<<<<<< HEAD
 
-=======
->>>>>>> 2dcf70d31655ede04b66bdac52c3dbaed6c87a47
   li {
     margin: 0 50px;
     display: inline-block;
     padding: 10px;
     font-size: 24px;
     line-height: 28px;
-<<<<<<< HEAD
     font-family: "Cuprum";
-=======
-    font-family: Cuprum;
->>>>>>> 2dcf70d31655ede04b66bdac52c3dbaed6c87a47
     a {
       color: black;
     }
   }
-<<<<<<< HEAD
 
   .current-menu-item {
     background: gray;
     border-radius: 30px;
     font-weight: bold;
   }
-
-=======
-  li.active a {
-    @extend .active;
-  }
-  .current-menu-item {
-    background: gray;
-    border-radius: 30px;
-    font-family: Roboto;
-    font-weight: bold;
-
-  }
->>>>>>> 2dcf70d31655ede04b66bdac52c3dbaed6c87a47
+  
 }
