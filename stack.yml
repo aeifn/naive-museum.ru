@@ -17,6 +17,7 @@ services:
       - wordpress:/var/www/html
       - ./theme:/var/www/html/wp-content/themes/mrlini
       - ./plugins:/var/www/html/wp-content/plugins
+      - ./uploads:/var/www/html/wp-content/uploads
 
   db:
     image: mysql:5.7
