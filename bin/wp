@@ -1,0 +1,4 @@
+docker run -it --rm \
+--volumes-from nm_wordpress_1 \
+--network container:nm_wordpress_1 \
+wordpress:cli $@
