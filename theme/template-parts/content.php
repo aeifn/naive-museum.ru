@@ -15,13 +15,7 @@
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
   <div class="container">
-    <div class="row">
-      <div class="col-md-8 offset-md-2">
-      <?php
-      the_post_thumbnail('large', array( 'class' => 'img-fluid w-100 col-md-6'));
-      ?>
-    </div>
-  </div>
+
 
 	<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
 		<div class="entry-content">

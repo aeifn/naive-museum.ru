@@ -9,7 +9,7 @@
   <!--<img class="card-img" src="<?= get_template_directory_uri() . '/img/04.jpg' ?>" alt="">-->
   <div class="card-img-overlay">
     <h1 class="card-title"><?= the_title(); ?></h1>
-    <p class="card-text date"><?= the_date(); ?></p>
+    <p class="card-text date"><?= get_post_custom_values('date', get_the_ID() )[0]; ?></p>
     <p class="card-text description">
       <?= the_excerpt(); ?>
     </p>

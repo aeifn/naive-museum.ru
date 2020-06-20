@@ -7,7 +7,7 @@
       <!-- Плитка -->
       <div class="row ">
         <?php while (have_posts()): ?>
-          <div class="col-md-6 d-flex">
+          <div class="col-lg-6 d-flex">
             <?php the_post();
             get_template_part('template-parts/card');
             ?>
