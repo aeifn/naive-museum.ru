@@ -1,0 +1,17 @@
+#searchform {
+  width: 100%;
+}
+#searchform  div {
+
+  input {
+    display:inline-block;
+  }
+
+  #s {
+    width:80%;
+    float: left;
+  }
+  #searchsubmit {
+    width:20%;
+  }
+}

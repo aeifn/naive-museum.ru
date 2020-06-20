@@ -15,15 +15,22 @@
 @import '~bootstrap/scss/_badge';
 @import '~bootstrap/scss/_card';
 @import '~bootstrap/scss/_tables';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/forms';
 
 
 
 @import './_card';
 @import './_menu';
 @import './_table';
-@import './_header';
+@import './header';
 @import './_social';
 @import './_fonts';
 @import './_widgets';
 @import './_footer';
 @import './_wpcore';
+@import './headings';
+@import './banners';
+@import './carousel';
+@import './creator';
+@import './search';

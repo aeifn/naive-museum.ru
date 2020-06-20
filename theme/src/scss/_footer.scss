@@ -1,24 +1,45 @@
-footer {
-  background: gray;
-  color: #000000;
-  padding: 40px 0 50px 0;
-}
+$footer-bg: gray;
+$footer-color: black;
 
+footer {
+  margin-top: $spacer*3;
+  background: $footer-bg;
+  color: $footer-color;
+  padding: $spacer*2 0;
+
+  a {
+    color: #000000;
+  }
 
 .menu {
-  
+
     padding-left: 0;
     font-size: 18px;
     font-height: 21px;
     list-style-type: none;
-    a {color: #000000;
-    }
+
+  }
+  h2 {
+    display: none;
+  }
 }
-.custom-html-widget {
-//  color: #000000;
-}
-.textwidget {
 
 
-  margin: 0 19px;
+@mixin creator () {
+  $color: #555;
+  color: $color;
+  font-size: .8rem;
+  a {
+    color: $color;
+  }
+}
+
+#creator {
+ @include creator;
+ margin-top: ($spacer * 2);
+ margin-bottom: ($spacer * .5);
+}
+
+#generator {
+  @include creator;
 }

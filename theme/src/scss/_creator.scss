@@ -1,0 +1,17 @@
+@mixin creator () {
+  $color: #555;
+  color: $color;
+  font-size: .8rem;
+  a {
+    color: $color;
+  }
+}
+#creator {
+ @include creator;
+ margin-top: ($spacer * 2);
+ margin-bottom: ($spacer * .75);
+}
+
+#generator {
+  @include creator;
+}

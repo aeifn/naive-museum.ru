@@ -1,6 +1,33 @@
-.visually_impaired_link {
-  font-size: 28px;
-  line-height: 28px;
-  a {color: black;
+header {
+
+  ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+
+.row {
+  margin-top: ($spacer * .5);
+}
+
+.right-top-widget-area .widget {
+  margin-top: $spacer;
+}
+
+}
+.visually_impaired {
+  a {color: black;}
+}
+
+
+
+#logo {
+  img {
+    height: 100px !important;
+  }
+}
+#description {
+  img {
+    height: 50px !important;
   }
 }
