@@ -1,2 +1,0 @@
-docker exec nm_db_1 sh -c 'exec mysqldump -uwordpress -pwordpress wordpress' > ~/nm/dump/dump.sql
-
