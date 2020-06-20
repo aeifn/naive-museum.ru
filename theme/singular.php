@@ -10,6 +10,7 @@
  */
 
 get_header();
+get_template_part ( 'template-parts/entry-header' );
 ?>
 <main id="site-content" class="container" role="main">
 	<div class="row">
@@ -19,7 +20,7 @@ get_header();
 		get_sidebar();
 		?> </div><div class="col-md-8"> <?php
 	} else {
-		?> <div> <?php
+		?> <div class="col-md-12 col-lg-10 mx-auto"> <?php
 	}
 	?>
 
