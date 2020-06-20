@@ -1,5 +1,8 @@
-<?php get_header(); ?>
+<?php
+get_header();
 
-CAROUSEL
-
-<?php get_footer();
+while (have_posts()) {
+  the_post();
+  get_template_part('template-parts/card');
+}
+get_footer();
