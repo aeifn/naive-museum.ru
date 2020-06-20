@@ -1,6 +1,7 @@
 <?php
 
 require_once get_template_directory() . '/vendor/autoload.php';
+require_once get_template_directory() . '/inc/template-tags.php';
 
 function mrlini_theme_support() {
   /*
@@ -28,7 +29,7 @@ function mrlini_menus() {
 //		'expanded' => __( 'Desktop Expanded Menu', 'twentytwenty' ),
 //		'mobile'   => __( 'Mobile Menu', 'twentytwenty' ),
 		'footer'   => __( 'Footer Menu', 'mrlini' ),
-		'social'   => __( 'Social Menu', 'mrlini' ),
+//		'social'   => __( 'Social Menu', 'mrlini' ),
 	);
 
 	register_nav_menus( $locations );
@@ -43,9 +44,22 @@ add_action( 'init', 'mrlini_menus' );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function twentytwenty_sidebar_registration() {
+function mrlini_sidebar_registration() {
 
-  // Footer #1.
+  register_sidebar(
+      array(
+        'name'        => 'Шапка',
+        'id'          => 'top-right',
+      )
+  );
+
+	register_sidebar(
+			array(
+				'name'        => 'Баннеры',
+				'id'          => 'banners',
+			)
+	);
+
 	register_sidebar(
 			array(
 				'name'        => 'Сайдбар #1',
@@ -53,7 +67,6 @@ function twentytwenty_sidebar_registration() {
 			)
 	);
 
-	// Footer #1.
 	register_sidebar(
 			array(
 				'name'        => 'Подвал #1',
@@ -61,7 +74,6 @@ function twentytwenty_sidebar_registration() {
 			)
 	);
 
-	// Footer #2.
 	register_sidebar(
 			array(
 				'name'        => 'Подвал #2',
@@ -69,7 +81,6 @@ function twentytwenty_sidebar_registration() {
 			)
 	);
 
-  // Footer #3.
   register_sidebar(
       array(
         'name'        => 'Подвал #3',
@@ -79,4 +90,15 @@ function twentytwenty_sidebar_registration() {
 
 }
 
-add_action( 'widgets_init', 'twentytwenty_sidebar_registration' );
+add_action( 'widgets_init', 'mrlini_sidebar_registration' );
+
+
+function mrlini_scripts() {
+	// Load the html5 shiv.
+//	wp_enqueue_script( 'html5', get_theme_file_uri( '/assets/js/html5.js' ), array(), '20161020' );
+//	wp_script_add_data( 'html5', 'conditional', 'lt IE 9' );
+  wp_enqueue_script( 'mrlini', get_theme_file_uri( '/dist/main.js') );
+
+	wp_enqueue_script( 'jquery' );
+}
+add_action( 'wp_enqueue_scripts', 'mrlini_scripts' );
