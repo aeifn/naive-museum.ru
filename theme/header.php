@@ -3,38 +3,36 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <script src="/wp-content/themes/mrlini/dist/main.js"></script>
   <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
+<body <?php body_class(); ?>
+<?php
+wp_body_open();
+?>
 <header>
   <div class="container">
     <div class="row">
         <div class="col-md-5">
-        <div><a href="http://mos.ru/kultura"><img src="<?php echo get_template_directory_uri() . '/img/depcult.png' ?>"></a></div>
-        <div>
-      <a href="/"><img src="<?php echo get_template_directory_uri() . '/img/logo.png' ?>" class="img-fluid"></a>
-    </div>
+          <?php
+          mrlini_site_description();
+          mrlini_site_logo();
+          ?>
         </div>
-        <div class="col-md-6 offset-md-1">
-            <!-- Служебные ссылки -->
-            <div class="row">
-            <div class="col-md-6"><a href="#">Summary</a></div>
-            <div class="col-md-6 d-none d-md-block visually_impaired_link"><a href="#">Версия для слабовидящих</a></div>
+        <div class="col-md-6 offset-md-1 right-side">
+          <div class="row">
+            <div class="col-md-3 text-left">
+              <?php wp_nav_menu('english'); ?>
             </div>
-            <!-- Поиск -->
-            <div class="row">
-            SEARCH
+            <div class="col-md-9 text-right visually_impaired">
+              <?php the_widget('Bvi_Widget', array( 'title'=>null ) ); ?>
             </div>
-            <!-- Социальные сети -->
-            <div class="row">
-            <?php get_template_part('template-parts/social-menu'); ?>
-            </div>
+          </div>
+          <div class="right-top-widget-area">
+            <?php dynamic_sidebar( 'top-right' ); ?>
+          </div>
         </div>
     </div>
 </div>
-<?php get_template_part('template-parts/menu'); ?>
-<?php get_template_part('template-parts/entry-header'); ?>
-<?php get_template_part('template-parts/submenu'); ?>
 </header>
+<?php get_template_part('template-parts/menu'); ?>
+<?php get_template_part('template-parts/submenu'); ?>
