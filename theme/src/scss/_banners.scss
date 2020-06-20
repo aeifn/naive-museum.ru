@@ -1,0 +1,15 @@
+#banners {
+  margin: 0;
+  padding-top: $spacer;
+  li {
+    @extend .col-md-4;
+    margin-bottom: $spacer;
+    text-align: center;
+  }
+  h2 {
+    display: none;
+  }
+  img {
+    border-radius: 15px;  
+  }
+}
