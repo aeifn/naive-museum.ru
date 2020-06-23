@@ -5,3 +5,4 @@ plugins
 dump
 uploads
 *.swp
+info.php
