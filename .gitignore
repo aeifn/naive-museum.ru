@@ -4,3 +4,4 @@ plugins
 .DS_Store
 dump
 uploads
+*.swp
