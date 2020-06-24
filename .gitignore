@@ -1,8 +1,8 @@
 theme/node_modules
 theme/dist
-plugins
 .DS_Store
 dump
-uploads
 *.swp
 info.php
+plugins
+uploads
