@@ -15,6 +15,7 @@ services:
       WORDPRESS_DEBUG: 1
     volumes:
       - wordpress:/var/www/html
+      - ./theme:/var/www/html/wp-content/themes/mrlini
 
   db:
     image: mysql:5.7
