@@ -18,7 +18,7 @@ $posts= get_posts();
       <div class="carousel-item <?php if($key==0) echo 'active' ?>">
         <?php the_post_thumbnail( 'medium_large', array ( 'class' => 'd-block w-100 carousel-image' ) ); ?>
         <div class="carousel-caption d-none d-md-block">
-          <h5><?= the_title() ?></h5>
+          <h1><?= the_title() ?></h1>
           <p><?= the_excerpt(); ?></p>
         </div>
       </div>
