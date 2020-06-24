@@ -11,33 +11,31 @@ footer {
     color: #000000;
   }
 
-.menu {
-
+  .menu {
     padding-left: 0;
     font-size: 18px;
     font-height: 21px;
     list-style-type: none;
-
   }
+
   h2 {
     display: none;
   }
 }
-
-
 @mixin creator () {
   $color: #555;
   color: $color;
-  font-size: .8rem;
+  font-size: 0.8rem;
+
   a {
     color: $color;
   }
 }
 
 #creator {
- @include creator;
- margin-top: ($spacer * 2);
- margin-bottom: ($spacer * .5);
+  @include creator;
+  margin-top: ($spacer * 2);
+  margin-bottom: ($spacer * .5);
 }
 
 #generator {

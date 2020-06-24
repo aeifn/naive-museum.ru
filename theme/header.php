@@ -24,11 +24,11 @@ wp_body_open();
               <?php wp_nav_menu('english'); ?>
             </div>
             <div class="col-md-9 text-right visually_impaired">
-              <?php the_widget('Bvi_Widget', array( 'title'=>null ) ); ?>
+              <?php the_widget('Bvi_Widget', array( 'title'=>null )); ?>
             </div>
           </div>
           <div class="right-top-widget-area">
-            <?php dynamic_sidebar( 'top-right' ); ?>
+            <?php dynamic_sidebar('top-right'); ?>
           </div>
         </div>
     </div>

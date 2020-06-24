@@ -30,6 +30,7 @@ $posts= get_posts( array ( 'numberposts' => 3 ) );
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Предыдущий</span>
     </a>
+    
     <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Следующий</span>

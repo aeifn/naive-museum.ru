@@ -1,21 +1,20 @@
 #searchform {
   width: 100%;
 }
-#searchform  div {
 
+#searchform div {
   input {
-
-    display:inline-block;
+    display: inline-block;
   }
 
   #s {
-    width:80%;
+    width: 80%;
     float: left;
     @extend .form-control;
-
   }
+
   #searchsubmit {
-    width:19%;
+    width: 19%;
     margin-left: 1%;
     @extend .btn;
     @extend .btn-secondary;

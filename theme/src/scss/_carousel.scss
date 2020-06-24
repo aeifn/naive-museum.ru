@@ -12,8 +12,9 @@
   left: 7%;
   right: 43.5%;
 }
+
 .carousel-inner a {
-  color:white;
+  color: white;
   //text-decoration: none;
 }
 
@@ -22,13 +23,15 @@
   margin: 0;
   bottom: 30px;
   right: 8%;
+
   li {
     height: 30px;
     border-radius: 50%;
   }
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   width: 50px;
   height: 50px;
 }

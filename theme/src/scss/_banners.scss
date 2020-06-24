@@ -1,15 +1,19 @@
 #banners {
   margin: 0;
   padding-top: $spacer;
+  @include make-row;
+
   li {
-    @extend .col-md-4;
+    @include make-col(4);
     margin-bottom: $spacer;
     text-align: center;
   }
+
   h2 {
     display: none;
   }
+
   img {
-    border-radius: 15px;  
+    border-radius: 15px;
   }
 }
