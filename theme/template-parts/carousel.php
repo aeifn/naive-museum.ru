@@ -1,5 +1,5 @@
 <?php
-$posts= get_posts( array ( 'numberposts' => 1, 'include' => 150) );
+$posts= get_posts( array ( 'numberposts' => 3 ) );
 ?>
 
 <div class="bd-example">
@@ -16,10 +16,10 @@ $posts= get_posts( array ( 'numberposts' => 1, 'include' => 150) );
 <?php foreach($posts as $key=>$post): setup_postdata($post); ?>
       <div class="carousel-item <?php if($key==0) echo 'active' ?>">
         <?php the_post_thumbnail( 'medium_large', array ( 'class' => 'd-block w-100 carousel-image' ) ); ?>
-        <div class="carousel-caption d-none d-md-block">
-          <h1><?= the_title() ?></h1>
+        <a href="#" class="carousel-caption d-none d-md-block">
+          <h1><?= the_title(); ?></h1>
           <p><?= the_excerpt(); ?></p>
-        </div>
+        </a>
       </div>
 <?php endforeach ?>
     </div>

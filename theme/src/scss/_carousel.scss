@@ -11,23 +11,24 @@
   bottom: 30px;
   left: 7%;
   right: 43.5%;
-  font-size: 18px;
-  line-height: 21px;
+}
+.carousel-caption:hover {
+  color:white;
+  text-decoration: none;
+}
 
-  h5 {
-    font-size: 48px;
-    line-height: 55px;
-    margin-top: 20px;
-    margin: 0 11px;
-  }
-  p {
-    margin-left: 11px;
-    margin-bottom: 20px;
+.carousel-indicators {
+  left: auto;
+  margin: 0;
+  bottom: 30px;
+  right: 8%;
+  li {
+    height: 30px;
+    border-radius: 50%;
   }
 }
-.active {
-  ol {
-  width: 30px;
-  height: 300px;
-}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 50px;
+  height: 50px;
 }
