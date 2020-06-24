@@ -34,10 +34,10 @@
 }
 
 .card-content .card-img-overlay {
+  @include img-overlay;
+  opacity: 0;
   position: relative;
   opacity: 0;
-  background: rgba(0,0,0,0.5);
-  padding: 20px;
   height: 100%;
 }
 
