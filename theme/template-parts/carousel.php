@@ -16,10 +16,12 @@ $posts= get_posts( array ( 'numberposts' => 3 ) );
 <?php foreach($posts as $key=>$post): setup_postdata($post); ?>
       <div class="carousel-item <?php if($key==0) echo 'active' ?>">
         <?php the_post_thumbnail( 'medium_large', array ( 'class' => 'd-block w-100 carousel-image' ) ); ?>
-        <a href="<?= the_permalink(); ?>" class="carousel-caption d-none d-md-block">
-          <h1><?= the_title(); ?></h1>
-          <p><?= the_excerpt(); ?></p>
-        </a>
+        <div href="<?= the_permalink(); ?>" class="carousel-caption d-none d-md-block">
+          <a href="<?=the_permalink()?>"><h1><?= the_title(); ?></h1></a>
+          <?= mrlini_carousel_tags( get_the_category() ) ?>
+          <p><?= get_post_custom_values('date', get_the_ID() )[0]; ?></p>
+          <?= the_excerpt(); ?>
+        </div>
       </div>
 <?php endforeach ?>
     </div>
