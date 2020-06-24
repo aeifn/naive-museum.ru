@@ -5,17 +5,16 @@
 }
 
 .carousel-caption {
-  background: rgba(0, 0, 0, 0.48);
-  border-radius: 20px;
+  @include img-overlay;
+  border-radius: $border-radius;
   text-align: left;
   bottom: 30px;
-  left: 5.08%;
+  left: 7%;
   right: 43.5%;
   font-size: 18px;
   line-height: 21px;
 
   h5 {
-
     font-size: 48px;
     line-height: 55px;
     margin-top: 20px;

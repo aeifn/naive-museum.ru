@@ -20,9 +20,9 @@
 @import '~bootstrap/scss/carousel';
 
 //@import 'bootstrap';
-
-@import './_card';
-@import './_menu';
+@import './mixins';
+@import './card';
+@import './menu';
 @import './table';
 @import './header';
 @import './social';
