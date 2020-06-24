@@ -102,3 +102,17 @@ function mrlini_scripts() {
 	wp_enqueue_script( 'jquery' );
 }
 add_action( 'wp_enqueue_scripts', 'mrlini_scripts' );
+
+
+
+/*********************************/
+/* Change Search Button Text
+/**************************************/
+
+// Add to your child-theme functions.php
+add_filter('get_search_form', 'my_search_form_text');
+
+function my_search_form_text($text) {
+     $text = str_replace('value="Search"', 'value="Поиск"', $text); //set as value the text you want
+     return $text;
+}
