@@ -1,3 +1,5 @@
-#carousel .sa_hover_container {
-  background-size: cover !important;
+.carousel-image {
+  height: 500px;
+  object-fit: cover;
+  object-position: 50% 40%;
 }

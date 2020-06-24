@@ -2,33 +2,33 @@
 @import "~fontsource-cuprum/cyrillic-ext.css";
 
 // Required
-@import '~bootstrap/scss/_functions';
-@import '~bootstrap/scss/_variables';
-@import './_vars';
-@import '~bootstrap/scss/_mixins';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import './vars';
+@import '~bootstrap/scss/mixins';
 
-@import '~bootstrap/scss/_reboot';
-@import '~bootstrap/scss/_grid';
-@import '~bootstrap/scss/_utilities';
-@import '~bootstrap/scss/_images';
-@import '~bootstrap/scss/_nav';
-@import '~bootstrap/scss/_badge';
-@import '~bootstrap/scss/_card';
-@import '~bootstrap/scss/_tables';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/badge';
+@import '~bootstrap/scss/card';
+@import '~bootstrap/scss/tables';
 @import '~bootstrap/scss/buttons';
 @import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/carousel';
 
-
+//@import 'bootstrap';
 
 @import './_card';
 @import './_menu';
-@import './_table';
+@import './table';
 @import './header';
-@import './_social';
-@import './_fonts';
-@import './_widgets';
-@import './_footer';
-@import './_wpcore';
+@import './social';
+@import './widgets';
+@import './footer';
+@import './wpcore';
 @import './headings';
 @import './banners';
 @import './carousel';
