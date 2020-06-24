@@ -2,3 +2,34 @@
   background: rgba(0,0,0,0.5);
   padding: $spacer;
 }
+@mixin menu {
+  margin: 0;
+  text-align: center;
+  padding-top: ($spacer);
+
+  li {
+    display: inline-block;
+    padding: 3px 15px;
+    font-size: $menu-font-size;
+    font-family: "Cuprum";
+
+    a {
+      color: black;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #666;
+    }
+  }
+
+  .current-menu-item,
+  .current-menu-parent {
+    background: #DADADA;
+    border-radius: 30px;
+
+    a:hover {
+      color: black;
+    }
+  }
+}

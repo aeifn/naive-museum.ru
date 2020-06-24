@@ -1,12 +1,8 @@
-// Fonts
 @import "~fontsource-cuprum/cyrillic-ext.css";
-
-// Required
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 @import './vars';
 @import '~bootstrap/scss/mixins';
-
 @import '~bootstrap/scss/reboot';
 @import '~bootstrap/scss/grid';
 @import '~bootstrap/scss/utilities';
@@ -18,8 +14,6 @@
 @import '~bootstrap/scss/buttons';
 @import '~bootstrap/scss/forms';
 @import '~bootstrap/scss/carousel';
-
-//@import 'bootstrap';
 @import './mixins';
 @import './card';
 @import './menu';
