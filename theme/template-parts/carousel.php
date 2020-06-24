@@ -1,6 +1,5 @@
 <?php
-
-$posts= get_posts();
+$posts= get_posts( array ( 'numberposts' => 1, 'include' => 150) );
 ?>
 
 <div class="bd-example">

@@ -3,3 +3,32 @@
   object-fit: cover;
   object-position: 50% 40%;
 }
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.48);
+  border-radius: 20px;
+  text-align: left;
+  bottom: 30px;
+  left: 5.08%;
+  right: 43.5%;
+  font-size: 18px;
+  line-height: 21px;
+
+  h5 {
+
+    font-size: 48px;
+    line-height: 55px;
+    margin-top: 20px;
+    margin: 0 11px;
+  }
+  p {
+    margin-left: 11px;
+    margin-bottom: 20px;
+  }
+}
+.active {
+  ol {
+  width: 30px;
+  height: 300px;
+}
+}
