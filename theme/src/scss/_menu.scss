@@ -1,7 +1,8 @@
-.menu-main {
+@mixin menu {
   margin: 0;
   text-align: center;
-  padding: 10px 0;
+  padding-top: ($spacer);
+
   li {
     display: inline-block;
     padding: 3px 15px;
@@ -17,7 +18,7 @@
   }
 
   .current-menu-item, .current-menu-parent {
-    background: gray;
+    background: #DADADA;
     border-radius: 30px;
     a:hover {
       color:black;
@@ -26,16 +27,15 @@
 }
 
 #mainmenu {
-  @extend .menu-main;
+  @include menu;
   li {
     margin: 0 20px;
   }
 }
 
 #submenu {
-  @extend .menu-main;
+  @include menu;
   li {
     margin: 0 10px;
   }
-
 }

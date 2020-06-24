@@ -1,37 +1,28 @@
 header {
 
+  #logo {
+    img {
+      height: 120px !important;
+    }
+  }
+  #description {
+    img {
+      height: 50px !important;
+    }
+  }
+
   ul {
   margin: 0;
   padding: 0;
   list-style: none;
   }
 
-.row {
-  margin-top: ($spacer * .5);
-}
-
-.right-top-widget-area .widget {
-  margin-top: $spacer;
-}
-
-.widget_nav_menu {
-  text-align: right;
-}
-
-}
-.visually_impaired {
-  a {color: black;}
-}
-
-
-
-#logo {
-  img {
-    height: 100px !important;
+  .menu, .widget {
+    margin-top: ($spacer * .7);
   }
-}
-#description {
-  img {
-    height: 50px !important;
+
+  .widget_nav_menu {
+    text-align: right;
   }
+
 }

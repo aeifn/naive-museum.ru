@@ -8,6 +8,6 @@ if ( is_category() ) {
   $title = the_title('','',false);
 }
  ?>
-<div class="row text-center">
+<div class="row text-center pt-4">
   <h1 class="mx-auto"><?= $title ?></h1>
 </div>
