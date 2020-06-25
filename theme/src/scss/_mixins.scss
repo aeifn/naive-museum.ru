@@ -2,6 +2,11 @@
   background: rgba(0,0,0,0.5);
   padding: $spacer;
 }
+@mixin social-badge {
+  border: $stroke;
+  line-height: 30px;
+  border-radius: 20px;
+}
 @mixin menu {
   margin: 0;
   text-align: center;

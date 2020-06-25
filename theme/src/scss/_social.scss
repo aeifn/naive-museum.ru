@@ -1,21 +1,14 @@
 #menu-social {
-  margin: 0;
-  padding: 0;
-
+  display: flex;
+  justify-content: space-between;
+  //flex-wrap: wrap;
   a {
     @extend .badge;
-    border: $stroke;
-    line-height: 30px;
-    border-radius: 20px;
+    @include social-badge;
   }
 
   a:hover {
     color: $white;
-  }
-
-  li {
-    display: inline-block;
-    margin-bottom: 5px;
   }
 
   .goskatalog:hover a {

@@ -12,13 +12,13 @@ wp_body_open();
 <header>
   <div class="container">
     <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-6">
           <?php
           mrlini_site_description();
           mrlini_site_logo();
           ?>
         </div>
-        <div class="col-md-6 offset-md-1 right-side">
+        <div class="col-md-6 right-side">
           <div class="row">
             <div class="col-md-3 text-left">
               <?php wp_nav_menu('english'); ?>
@@ -32,7 +32,9 @@ wp_body_open();
           </div>
         </div>
     </div>
-</div>
+  </div>
+  <nav>
+  <?php get_template_part('template-parts/menu'); ?>
+  <?php get_template_part('template-parts/submenu'); ?>
+  </nav>
 </header>
-<?php get_template_part('template-parts/menu'); ?>
-<?php get_template_part('template-parts/submenu'); ?>
