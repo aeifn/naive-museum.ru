@@ -1,0 +1,19 @@
+nav {
+  padding: ($spacer * .5) 0;
+}
+#mainmenu {
+  @include menu;
+
+  li {
+  //  margin: 0 20px;
+  }
+}
+
+#submenu {
+  @include menu;
+  justify-content: center;
+  margin-top: $spacer;
+  li {
+    //margin: 0 10px;
+  }
+}

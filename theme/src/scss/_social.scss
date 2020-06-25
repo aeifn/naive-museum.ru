@@ -1,7 +1,11 @@
 #menu-social {
   display: flex;
   justify-content: space-between;
-  //flex-wrap: wrap;
+  flex-wrap: wrap;
+  li {
+    margin:0 auto;
+    margin-bottom: 5px;
+  }
   a {
     @extend .badge;
     @include social-badge;

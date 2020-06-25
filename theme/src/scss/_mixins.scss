@@ -2,18 +2,29 @@
   background: rgba(0,0,0,0.5);
   padding: $spacer;
 }
+@mixin rounded($radius: 15px) {
+  border-radius: $radius !important;
+}
 @mixin social-badge {
+  @include rounded(20px);
   border: $stroke;
   line-height: 30px;
-  border-radius: 20px;
 }
+
+nav {
+  @extend .container;
+}
+
 @mixin menu {
   margin: 0;
   text-align: center;
-  padding-top: ($spacer);
+  //padding-top: ($spacer);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
   li {
-    display: inline-block;
+    //display: inline-block;
     padding: 3px 15px;
     font-size: $menu-font-size;
     font-family: "Cuprum";
@@ -31,7 +42,7 @@
   .current-menu-item,
   .current-menu-parent {
     background: #DADADA;
-    border-radius: 30px;
+    @include rounded(30px);
 
     a:hover {
       color: black;

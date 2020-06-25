@@ -1,4 +1,7 @@
 header {
+  .container {
+    padding-bottom: $spacer;
+  }
   #logo {
     img {
       height: 120px !important;
@@ -25,4 +28,13 @@ header {
   .widget_nav_menu {
     text-align: right;
   }
+
+  a {
+    color: black;
+    &:hover {
+      color: gray;
+      text-decoration: none;
+    }
+  }
+
 }
