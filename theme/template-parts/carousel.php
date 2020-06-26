@@ -17,10 +17,10 @@ $posts= get_posts( array ( 'numberposts' => 3 ) );
       <div class="carousel-item <?php if($key==0) echo 'active' ?>">
         <?php the_post_thumbnail( 'medium_large', array ( 'class' => 'd-block w-100 carousel-image' ) ); ?>
         <div href="<?= the_permalink(); ?>" class="carousel-caption d-none d-md-block">
-          <a href="<?=the_permalink()?>"><h1><?= the_title(); ?></h1></a>
+          <a class="no-underline" href="<?=the_permalink()?>"><h1><?= the_title(); ?></h1></a>
           <?= mrlini_carousel_tags( get_the_category() ) ?>
           <p><?= get_post_custom_values('date', get_the_ID() )[0]; ?></p>
-          <?= the_excerpt(); ?>
+          <a class="no-underline" href="<?=the_permalink()?>"<?= the_excerpt(); ?></a>
         </div>
       </div>
 <?php endforeach ?>
@@ -30,7 +30,7 @@ $posts= get_posts( array ( 'numberposts' => 3 ) );
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Предыдущий</span>
     </a>
-    
+
     <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Следующий</span>
