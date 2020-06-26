@@ -9,6 +9,9 @@ footer {
 
   a {
     color: #000000;
+    &:hover {
+      color: $white;
+    }
   }
 
   .menu {
