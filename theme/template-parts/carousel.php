@@ -20,7 +20,7 @@ $posts= get_posts( array ( 'numberposts' => 3 ) );
           <a class="no-underline" href="<?=the_permalink()?>"><h1><?= the_title(); ?></h1></a>
           <?= mrlini_carousel_tags( get_the_category() ) ?>
           <p><?= get_post_custom_values('date', get_the_ID() )[0]; ?></p>
-          <a class="no-underline" href="<?=the_permalink()?>"<?= the_excerpt(); ?></a>
+          <a href="<?=the_permalink()?>"<?= the_excerpt(); ?></a>
         </div>
       </div>
 <?php endforeach ?>
