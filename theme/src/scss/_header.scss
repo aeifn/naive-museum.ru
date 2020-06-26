@@ -2,15 +2,30 @@ header {
   .container {
     padding-bottom: $spacer;
   }
-  #logo {
-    img {
-      height: 120px !important;
-    }
+
+  .logo-container{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .widget-inline {
+    display: flex;
+    justify-content: space-between;
   }
 
   #description {
+    height: 35px;
     img {
-      height: 50px !important;
+      @include img-fluid;
+      height: 50px;
+    }
+  }
+
+  #logo {
+    img {
+      @include img-fluid;
+      height: 120px;
     }
   }
 
@@ -31,10 +46,10 @@ header {
 
   a {
     color: black;
+
     &:hover {
       color: gray;
       text-decoration: none;
     }
   }
-
 }

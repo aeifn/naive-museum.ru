@@ -12,18 +12,18 @@ wp_body_open();
 <header>
   <div class="container">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 logo-container">
           <?php
           mrlini_site_description();
           mrlini_site_logo();
           ?>
         </div>
         <div class="col-md-6 right-side">
-          <div class="row">
-            <div class="col-md-3 text-left">
+          <div class="widget-inline">
+            <div>
               <?php wp_nav_menu('english'); ?>
             </div>
-            <div class="col-md-9 text-right visually_impaired">
+            <div class="visually_impaired">
               <?php the_widget('Bvi_Widget', array( 'title'=>null )); ?>
             </div>
           </div>

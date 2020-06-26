@@ -4,13 +4,14 @@
   object-position: 50% 40%;
 }
 
+
 .carousel-caption {
   @include img-overlay;
-  border-radius: $border-radius;
+  @include rounded;
   text-align: left;
   bottom: 30px;
-  left: 7%;
-  right: 43.5%;
+  left: 10%;
+  right: 50%;
 }
 
 .carousel-inner a {
@@ -22,7 +23,7 @@
   left: auto;
   margin: 0;
   bottom: 30px;
-  right: 8%;
+  right: 10%;
 
   li {
     height: 30px;
