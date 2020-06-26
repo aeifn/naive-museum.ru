@@ -16,6 +16,7 @@ header {
 
   #description {
     height: 35px;
+    z-index: 1000;
     img {
       @include img-fluid;
       height: 50px;
