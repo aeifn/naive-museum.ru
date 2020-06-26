@@ -98,3 +98,9 @@ function mrlini_carousel($atts)
     return ob_get_clean();
 }
 add_shortcode('carousel', 'mrlini_carousel');
+
+
+function mytheme_custom_excerpt_length( $length ) {
+    return 25;
+}
+add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );
