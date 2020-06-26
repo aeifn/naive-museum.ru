@@ -4,7 +4,7 @@
   @include make-row;
 
   li {
-    @include make-col(4);
+    @extend .col-md-4;
     margin-bottom: $spacer;
     text-align: center;
   }
