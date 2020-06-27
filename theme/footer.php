@@ -1,5 +1,3 @@
-<?php get_template_part('template-parts/banners'); ?>
-
 <footer>
 	<div class="container">
 		<div class="row">
