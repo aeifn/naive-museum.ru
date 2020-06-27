@@ -34,7 +34,13 @@ wp_body_open();
     </div>
   </div>
   <nav>
-  <?php get_template_part('template-parts/menu'); ?>
-  <?php get_template_part('template-parts/submenu'); ?>
+  <?php get_template_part('template-parts/menu');
+  if(!is_front_page()) {
+    get_template_part('template-parts/entry-header');
+  }
+  if(!is_single()) {
+  get_template_part('template-parts/submenu');
+  }
+  ?>
   </nav>
 </header>

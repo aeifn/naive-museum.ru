@@ -1,6 +1,4 @@
-<?php get_header();
-get_template_part('template-parts/entry-header');
-?>
+<?php get_header();?>
 <main id="site-content" class="container" role="main">
 	<div class="row">
 	<?php

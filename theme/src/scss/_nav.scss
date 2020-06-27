@@ -1,6 +1,44 @@
 nav {
-  padding: ($spacer * .5) 0;
+  @include make-container-max-widths;
+  @include make-container;
+  padding-top: ($spacer * .5);
+  padding-bottom: 0;
+  margin-bottom: 40px;
 }
+
+@mixin menu {
+  margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  li {
+    padding: 3px 15px;
+    font-size: $menu-font-size;
+    font-family: "Cuprum";
+
+    a {
+      color: black;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #666;
+    }
+  }
+
+  .current-menu-item,
+  .current-menu-parent {
+    background: #DADADA;
+    @include rounded(30px);
+
+    a:hover {
+      color: black;
+    }
+  }
+}
+
 #mainmenu {
   @include menu;
 
@@ -12,7 +50,6 @@ nav {
 #submenu {
   @include menu;
   justify-content: center;
-  margin-top: $spacer;
   li {
     //margin: 0 10px;
   }
