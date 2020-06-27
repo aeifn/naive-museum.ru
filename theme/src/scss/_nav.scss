@@ -3,7 +3,6 @@ nav {
   @include make-container;
   padding-top: ($spacer * .5);
   padding-bottom: 0;
-  margin-bottom: 40px;
 }
 
 @mixin menu {
