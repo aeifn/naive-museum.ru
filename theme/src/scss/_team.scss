@@ -1,0 +1,22 @@
+#post-85 {
+  .wp-block-media-text {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wp-block-media-text__media {
+    width: 30%;
+    img {
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 50% 40%;
+      width: 300px;
+      height: 300px;
+    }
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-indent: 0;
+  }
+}

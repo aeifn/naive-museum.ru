@@ -10,7 +10,6 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
