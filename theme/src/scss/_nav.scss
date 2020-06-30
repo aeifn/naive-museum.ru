@@ -1,8 +1,7 @@
 nav {
   @include make-container-max-widths;
   @include make-container;
-  padding-top: ($spacer * .5);
-  padding-bottom: 0;
+  padding: ($spacer * .5);
 }
 
 @mixin menu {
