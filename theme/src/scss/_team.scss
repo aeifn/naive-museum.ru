@@ -1,22 +1,57 @@
 #post-85 {
-  .wp-block-media-text {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .wp-block-media-text__media {
-    width: 30%;
-    img {
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: 50% 40%;
-      width: 300px;
-      height: 300px;
-    }
-  }
+  @extend .col-md-10;
+  @extend .mx-auto;
+
   h2 {
     text-align: center;
+    font-size: 34px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    font-weight: none;
   }
-  p {
-    text-indent: 0;
+
+  h2:first-child {
+    margin: 0;
+  }
+
+  .wp-block-media-text {
+    display: flex;
+    margin-top: 40px;
+    grid-template-columns: 220px auto !important;
+
+    figure.wp-block-media-text__media {
+      width: 220px !important;
+
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 220px;
+        height: 220px;
+      }
+    }
+
+    .wp-block-media-text__content {
+      h3 {
+        font-size: 24px;
+      }
+
+      h3:first-child {
+        font-size: 29px;
+        margin: 0 !important;
+      }
+
+      p {
+        text-indent: 0;
+      }
+    }
+  }
+  /* Personal customizations */
+  .sergeev img {}
+
+  .dvorakovsky {}
+
+  .klenchev img {
+    object-position: 10% 10% !important;
   }
 }
