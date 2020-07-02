@@ -1,5 +1,18 @@
 <?php
-$posts= get_posts( array ( 'numberposts' => 3 ) );
+$posts= get_posts(
+    array(
+  'meta_query' => array(
+    array(
+    'key'=>'weight',
+    'value'=>'1',
+    'compare'=>'>='
+    )
+  ),
+  'meta_key'=>'weight',
+  'orderby'=>'meta_value date',
+  'order'=>'DESC'
+)
+);
 ?>
 
 <div class="bd-example">
