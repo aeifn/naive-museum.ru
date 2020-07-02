@@ -15,13 +15,13 @@ $posts= get_posts(
 );
 ?>
 
-<div class="bd-example">
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
 
 
     <ol class="carousel-indicators">
 <?php foreach($posts as $key=>$post) { ?>
-        <li data-target="#carouselExampleCaptions" data-slide-to="<?=$key?>" <?php if($key==0): ?>class="active"<?php endif ?>></li>
+        <li data-target="#carousel" data-slide-to="<?=$key?>" <?php if($key==0): ?>class="active"<?php endif ?>></li>
 <?php } ?>
     </ol>
 
@@ -39,15 +39,14 @@ $posts= get_posts(
 <?php endforeach ?>
     </div>
 
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Предыдущий</span>
     </a>
 
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Следующий</span>
     </a>
 
-  </div>
 </div>

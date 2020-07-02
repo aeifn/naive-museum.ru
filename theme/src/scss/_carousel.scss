@@ -1,9 +1,13 @@
 $carousel-height: 500px;
 
+#carousel, .carousel-inner, .carousel-item, .carousel-image {
+  height: 100%;
+}
+
 .carousel-image {
-  height: $carousel-height;
   object-fit: cover;
   object-position: 50% 40%;
+  min-height: $carousel-height;
 }
 
 .carousel-inner a {
@@ -60,7 +64,7 @@ $carousel-height: 500px;
   .carousel-image {
     display: block;
     position: relative;
-    height: $carousel-height;
+    min-height: $carousel-height;
   }
   .carousel-inner a {
     color: black;
