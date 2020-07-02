@@ -108,3 +108,10 @@ a img.aligncenter {
   z-index: 100000;
   /* Above WP toolbar. */
 }
+
+
+
+.wp-block-media-text * {
+  text-align: left;
+  text-indent: 0;
+}

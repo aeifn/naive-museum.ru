@@ -1,17 +1,9 @@
+$carousel-height: 500px;
+
 .carousel-image {
-  height: 500px;
+  height: $carousel-height;
   object-fit: cover;
   object-position: 50% 40%;
-}
-
-
-.carousel-caption {
-  @include img-overlay;
-  @include rounded;
-  text-align: left;
-  bottom: 30px;
-  left: 10%;
-  right: 50%;
 }
 
 .carousel-inner a {
@@ -19,11 +11,16 @@
   //text-decoration: none;
 }
 
+
 .carousel-indicators {
   left: auto;
   margin: 0;
   bottom: 30px;
   right: 10%;
+  @include media-breakpoint-down(sm) {
+    left: 0;
+    right: 0;
+  }
 
   li {
     height: 30px;
@@ -35,4 +32,44 @@
 .carousel-control-prev-icon {
   width: 50px;
   height: 50px;
+}
+
+
+@include media-breakpoint-up(md) {
+  .carousel-caption {
+    @include img-overlay;
+    @include rounded;
+    text-align: left;
+    bottom: 30px;
+    left: 10%;
+    right: 50%;
+  }
+}
+@include media-breakpoint-down(sm) {
+  $carousel-height: 400px;
+  .carousel-caption {
+    position: relative;
+    color: black !important;
+    text-align: left;
+    left: $spacer;
+    right: $spacer;
+    top:0;
+    padding-top: ($spacer / 2);
+    z-index: 1000;
+  }
+  .carousel-image {
+    display: block;
+    position: relative;
+    height: $carousel-height;
+  }
+  .carousel-inner a {
+    color: black;
+  }
+  .carousel-indicators {
+    top: $carousel-height - 60px;
+    bottom: auto;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    height: ($carousel-height);
+  }
 }

@@ -3,20 +3,21 @@ header {
     padding-bottom: $spacer;
   }
 
-  .logo-container{
+  .logo-container {
     display: flex;
     flex-direction: column;
-
   }
 
   .widget-inline {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   #description {
     height: 35px;
     z-index: 1000;
+
     img {
       @include img-fluid;
       height: 50px;
@@ -52,5 +53,16 @@ header {
       color: gray;
       text-decoration: none;
     }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .widget-inline div,
+  .widget_bvi_widget a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-container {
+    margin: 0 auto;
   }
 }

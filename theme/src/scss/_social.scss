@@ -35,3 +35,13 @@
     background: rgb(84, 116, 164);
   }
 }
+
+@include media-breakpoint-down(sm){
+  #menu-social {
+    justify-content: center;
+    li {
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+  }
+}
