@@ -4,8 +4,11 @@ plugins:
 .PHONY: dump
 dbdump:
 	docker exec nm_db_1 sh -c 'exec mysqldump -uwordpress -pwordpress wordpress' > dump/dump.sql
+dumpmeta:
+	docker exec nm_db_1 sh -c 'exec mysqldump -uwordpress -pwordpress --add-drop-table wordpress wp_postmeta' > dump/dump.sql
 
-dbrestore: pull
+
+dbrestore: 
 	docker exec -i nm_db_1 sh -c 'exec mysql -uwordpress -pwordpress wordpress' < ./dump/dump.sql
 
 push: dbdump
