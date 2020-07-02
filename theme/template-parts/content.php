@@ -13,7 +13,6 @@
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-  <div class="container">
 	<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
 		<div class="entry-content <?php $a= is_active_sidebar('sidebar-1') ? 'has-sidbar':'no-sidebar'?>">
 			<?php
@@ -30,5 +29,4 @@
 		<?php edit_post_link(); ?>
 	</div><!-- .section-inner -->
 
-</div>
 </article><!-- .post -->
