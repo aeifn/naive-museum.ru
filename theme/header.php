@@ -35,7 +35,7 @@ wp_body_open();
   </div>
   <nav>
   <?php get_template_part('template-parts/menu');
-  if(!is_front_page()) {
+  if(!is_front_page() && !is_search()) {
     get_template_part('template-parts/entry-header');
   }
   if(!is_single()) {
