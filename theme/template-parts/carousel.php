@@ -16,7 +16,7 @@ $posts= get_posts(
 ?>
 
 
-<div id="carousel" class="carousel slide" data-ride="carousel">
+<div id="carousel" class="carousel slide container" data-ride="carousel">
 
 
     <ol class="carousel-indicators">
