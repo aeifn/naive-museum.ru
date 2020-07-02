@@ -1,13 +1,12 @@
 #banners {
-  margin: 0;
-  padding-top: $spacer;
-  @include make-row;
-  padding: 1em;
-  margin-top: 1em;
+  @extend .container;
+  margin-top: $spacer*2;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 
   li {
-    @extend .col-md-4;
-    text-align: center;
+    flex-shrink: 0;
     margin-bottom: $spacer;
   }
 
