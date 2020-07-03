@@ -100,18 +100,40 @@ function mrlini_carousel($atts)
 add_shortcode('carousel', 'mrlini_carousel');
 
 
-function mytheme_custom_excerpt_length( $length ) {
+function mytheme_custom_excerpt_length($length)
+{
     return 25;
 }
-add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );
+add_filter('excerpt_length', 'mytheme_custom_excerpt_length', 999);
 
 
 
 /* Модифицируем класс статьи с помощью кастомных полей */
-add_filter('post_class','mrlini_post_class');
+add_filter('post_class', 'mrlini_post_class');
 
-function mrlini_post_class($a){
-  $class = get_post_custom_values('class', get_the_ID());
-  array_push($a, $class[0]);
-  return $a;
+function mrlini_post_class($a)
+{
+    $class = get_post_custom_values('class', get_the_ID());
+    array_push($a, $class[0]);
+    return $a;
+}
+
+
+/* */
+function mrlini_get_carousel_posts()
+{
+  return get_posts(
+    array(
+      'meta_query' => array(
+        array(
+          'key'=>'weight',
+          'value'=>'0',
+          'compare'=>'>'
+        )
+      ),
+      'meta_key'=>'weight',
+      'orderby'=>'meta_value date',
+      'order'=>'DESC'
+    )
+  );
 }

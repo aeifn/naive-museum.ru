@@ -1,18 +1,5 @@
 <?php
-$posts= get_posts(
-    array(
-  'meta_query' => array(
-    array(
-    'key'=>'weight',
-    'value'=>'1',
-    'compare'=>'>='
-    )
-  ),
-  'meta_key'=>'weight',
-  'orderby'=>'meta_value date',
-  'order'=>'DESC'
-)
-);
+$posts= mrlini_get_carousel_posts();
 ?>
 
 
