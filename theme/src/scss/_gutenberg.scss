@@ -1,9 +1,13 @@
 /* Кастомизация блоков гутенберга */
 
 .wp-block-media-text {
-  //text-align: left;
-  //text-indent: 0;
+  margin-bottom: $spacer/1.5;
+  .wp-block-media-text__content * {
+    text-align: left;
+    text-indent: 0;
+  }
   .wp-block-media-text__media img {
     border-radius: $radius;
+    border: 1px solid #eee;
   }
 }
