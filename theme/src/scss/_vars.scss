@@ -1,3 +1,18 @@
+
+
+/* Color system */
+
+$info: $gray-300;
+$red: #D62B30;
+$primary: $red;
+$stroke-color: #B9B9B9;
+$stroke-color-1: #888888;
+$nav-pills-link-color: black;
+$nav-pills-link-active-bg: #bbb;
+$nav-pills-link-active-color: black;
+
+
+/* Other */
 $font-size-base: 15;
 $badge-font-size: $font-size-base;
 $badge-font-weight: normal;
@@ -5,17 +20,11 @@ $badge-padding-x: 18px;
 $menu-font-size: 24px;
 $entry-header-size: 3em;
 $h2-size: 28px;
-$red: #D62B30;
-$primary: $red;
-$stroke-color: #B9B9B9;
-$stroke-color-1: #888888;
+
 $border-radius: 20px;
 $radius: 30px !default;
 $stroke: 1px solid $stroke-color;
 $link-color: $blue;
-$nav-pills-link-color: black;
-$nav-pills-link-active-bg: #bbb;
-$nav-pills-link-active-color: black;
 $headings-font-family: "Cuprum";
 $font-family-base: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $line-height-base: 1.3;
