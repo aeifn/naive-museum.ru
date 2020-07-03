@@ -108,13 +108,3 @@ a img.aligncenter {
   z-index: 100000;
   /* Above WP toolbar. */
 }
-
-/* CUSTOM */
-
-.wp-block-media-text {
-  //text-align: left;
-  //text-indent: 0;
-  .wp-block-media-text__media img {
-    border-radius: 30px;
-  }
-}
