@@ -1,4 +1,4 @@
-<div class="container mt-2">
+<main class="container mt-2">
   <div class="row">
     <div class="col-md-4">
       <?php get_sidebar(); ?>
@@ -14,8 +14,7 @@
           </div>
         <?php endwhile ?>
         <?php the_posts_pagination(); ?>
-
       </div>
     </div>
   </div>
-</div>
+</main>
