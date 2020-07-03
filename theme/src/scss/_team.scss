@@ -1,4 +1,4 @@
-#post-85 {
+.team-page {
   @extend .col-md-10;
   @extend .mx-auto;
 
@@ -50,6 +50,12 @@
       p {
         text-indent: 0;
       }
+      a {
+        color: black;
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
 
     @include media-breakpoint-down (sm) {
@@ -63,13 +69,5 @@
     }
 
 
-  }
-  /* Personal customizations */
-  .sergeev img {}
-
-  .dvorakovsky {}
-
-  .klenchev img {
-    object-position: 10% 10% !important;
   }
 }
