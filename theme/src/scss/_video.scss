@@ -1,0 +1,7 @@
+.wp-block-embed__wrapper {
+  @extend .embed-responsive, .embed-responsive-16by9;
+
+  iframe {
+    @extend .embed-responsive-item;
+  }
+}
