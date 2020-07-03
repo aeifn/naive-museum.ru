@@ -1,5 +1,3 @@
-$carousel-height: 500px;
-
 #carousel, .carousel-inner, .carousel-item, .carousel-image {
   height: 100%;
 }
@@ -46,11 +44,10 @@ $carousel-height: 500px;
     text-align: left;
     bottom: 30px;
     left: 10%;
-    right: 50%;
+    right: 40%;
   }
 }
 @include media-breakpoint-down(sm) {
-  $carousel-height: 400px;
   .carousel {
     padding: 0;
   }
@@ -67,16 +64,16 @@ $carousel-height: 500px;
   .carousel-image {
     display: block;
     position: relative;
-    min-height: $carousel-height;
+    min-height: $carousel-height-sm;
   }
   .carousel-inner a {
     color: black;
   }
   .carousel-indicators {
-    top: $carousel-height - 60px;
+    top: $carousel-height-sm - 60px;
     bottom: auto;
   }
   .carousel-control-next, .carousel-control-prev {
-    height: ($carousel-height);
+    height: ($carousel-height-sm);
   }
 }
