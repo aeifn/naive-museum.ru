@@ -18,7 +18,7 @@ $posts= mrlini_get_carousel_posts();
         <a href="<?=the_permalink()?>">
         <?php the_post_thumbnail( 'medium_large', array ( 'class' => 'd-block w-100 carousel-image' ) ); ?>
         </a>
-        <div href="<?= the_permalink(); ?>" class="carousel-caption d-none d-md-block">
+        <div href="<?= the_permalink(); ?>" class="carousel-caption">
           <a href="<?=the_permalink()?>"><h1><?= the_title(); ?></h1></a>
           <?= the_category();  ?>
           <p><?= get_post_custom_values('date', get_the_ID() )[0]; ?></p>
