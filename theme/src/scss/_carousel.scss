@@ -2,6 +2,24 @@
   height: 100%;
 }
 
+.carousel {
+  .post-categories {
+    display: inline;
+    padding: 0;
+    li {
+      display: inline;
+      &:after {
+        content: ", "
+      }
+      &:last-child {
+        &:after {
+          content: "";          
+        }
+      }
+    }
+  }
+}
+
 .carousel-image {
   object-fit: cover;
   object-position: 50% 40%;

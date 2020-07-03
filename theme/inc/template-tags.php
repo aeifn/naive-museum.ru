@@ -18,13 +18,3 @@ function mrlini_site_description () {
     </a>
   </div>
 <?php }
-
-function mrlini_carousel_tags( $categories ) {
-   foreach ($categories as $key=>$category) {
-     $link = get_term_link( $category );
-     $a[$key] = "<a href=\"$link\">$category->name</a>";
-   }
-   echo "<p>";
-   echo ( implode ( ', ' , $a ) );
-   echo "</p>";
-}
