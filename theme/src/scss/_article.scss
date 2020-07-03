@@ -12,4 +12,10 @@ article {
   .has-sidbar h1,h2,h3,h5 {
     text-align: left;
   }
+  a {
+    color: $primary;
+    &:hover {
+      color: $primary;
+    }
+  }
 }
