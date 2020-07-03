@@ -137,3 +137,18 @@ function mrlini_get_carousel_posts()
     )
   );
 }
+
+
+
+
+
+function mrlini_category_pagesize( $query )
+{
+    if ( is_category( 'virtual' ) )
+    {
+        // If you want "posts per page"
+        $query->query_vars['posts_per_page'] = 100;
+        return;
+    }
+}
+add_action( 'pre_get_posts', 'mrlini_category_pagesize', 1 );
