@@ -8,9 +8,9 @@ footer {
   padding: $spacer*2 0;
 
   a {
-    color: #000000;
+    color: $black;
     &:hover {
-      color: #fff;
+      color: $white;
       text-decoration: none;
     }
   }
@@ -27,7 +27,7 @@ footer {
   }
 }
 @mixin creator () {
-  $color: #555;
+  $color: $gray-100;
   color: $color;
   font-size: 0.8rem;
 
