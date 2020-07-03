@@ -3,7 +3,7 @@ $posts= mrlini_get_carousel_posts();
 ?>
 
 
-<div id="carousel" class="carousel slide container" data-ride="carousel">
+<section id="carousel" class="carousel slide container" data-ride="carousel">
 
 
     <ol class="carousel-indicators">
@@ -38,4 +38,4 @@ $posts= mrlini_get_carousel_posts();
       <span class="sr-only">Следующий</span>
     </a>
 
-</div>
+</section>
