@@ -51,6 +51,9 @@ $carousel-height: 500px;
 }
 @include media-breakpoint-down(sm) {
   $carousel-height: 400px;
+  .carousel {
+    padding: 0;
+  }
   .carousel-caption {
     position: relative;
     color: black !important;
