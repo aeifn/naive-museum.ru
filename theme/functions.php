@@ -148,3 +148,8 @@ function mrlini_category_pagesize( $query )
     }
 }
 add_action( 'pre_get_posts', 'mrlini_category_pagesize', 1 );
+
+
+function mrlini_is_active_sidebar() {
+  return is_active_sidebar('sidebar-1');
+}
