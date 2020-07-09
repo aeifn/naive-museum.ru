@@ -7,10 +7,10 @@ article {
 
 article {
   h1,h2,h3,h4 {
-    text-align: center;
-  }
-  .has-sidbar h1,h2,h3,h5 {
     text-align: left;
+  }
+  p {
+	  text-align:justify;
   }
   a {
     color: $primary;
