@@ -79,6 +79,7 @@ add_action('widgets_init', 'mrlini_widgets_registration');
 function mrlini_scripts()
 {
     wp_enqueue_script('mrlini', get_theme_file_uri('/dist/main.js'));
+    wp_enqueue_style('mrlini', get_theme_file_uri('/dist/main.css'));
 }
 add_action('wp_enqueue_scripts', 'mrlini_scripts');
 

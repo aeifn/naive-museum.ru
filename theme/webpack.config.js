@@ -1,4 +1,7 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
+  plugins: [new MiniCssExtractPlugin()],
   devServer: {
     contentBase: '.',
   },
@@ -9,7 +12,8 @@ module.exports = {
     rules: [{
         test: /\.s[ac]ss$/i,
         use: [
-          'style-loader',
+	  MiniCssExtractPlugin.loader,
+          //'style-loader',
           'css-loader',
           'sass-loader',
         ],
