@@ -134,7 +134,8 @@ function mrlini_get_carousel_posts()
       ),
       'meta_key'=>'weight',
       'orderby'=>'meta_value date',
-      'order'=>'DESC'
+      'order'=>'DESC',
+      'posts_per_page'=>10
     )
   );
 }
