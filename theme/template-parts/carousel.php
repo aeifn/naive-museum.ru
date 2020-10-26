@@ -16,7 +16,7 @@ $posts= mrlini_get_carousel_posts();
 <?php foreach($posts as $key=>$post): setup_postdata($post); ?>
       <div class="carousel-item <?php if($key==0) echo 'active' ?>">
         <a href="<?=the_permalink()?>">
-        <?php the_post_thumbnail( 'large', array ( 'class' => 'd-block w-100 carousel-image' ) ); ?>
+        <?php the_post_thumbnail( array(2000,2000), array ( 'class' => 'd-block w-100 carousel-image' ) ); ?>
         </a>
         <div href="<?= the_permalink(); ?>" class="carousel-caption">
           <a href="<?=the_permalink()?>"><h1><?= the_title(); ?></h1></a>
