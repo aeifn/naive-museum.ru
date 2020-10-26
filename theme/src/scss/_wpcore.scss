@@ -1,6 +1,7 @@
 /* =WordPress Core
 -------------------------------------------------------------- */
-.wp-block-image img {
+.wp-block-image img,
+.wp-block-media-text__media img {
 	max-width: 100%;
 	height: auto;
 }
