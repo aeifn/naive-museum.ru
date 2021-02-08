@@ -2,3 +2,26 @@
     @extend .text-center;
     margin-bottom: 15px;
 }
+
+#site-content .blocks-gallery-grid {
+    .blocks-gallery-item {
+        figure {
+            flex-direction: column;
+            img {
+                height: auto !important;
+            }
+            figcaption {
+                background: none;
+                color:black;
+                position: relative;
+                padding: 5px;
+                strong {
+                    display: block;
+                }
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
