@@ -9,11 +9,11 @@
 <?php } else { ?>
 		<div class="col-md-12 col-lg-10 mx-auto">
 <?php } ?>
-
 <?php if (have_posts()) {
         while (have_posts()) {
             the_post();
-						get_template_part('template-parts/the-meta');
+			get_template_part('template-parts/the-meta');
+			get_template_part('template-parts/tickets-btn');
             get_template_part('template-parts/content', get_post_type());
         }
     } ?>

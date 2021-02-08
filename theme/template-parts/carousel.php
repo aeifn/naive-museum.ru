@@ -23,6 +23,7 @@ $posts= mrlini_get_carousel_posts();
           <?= the_category();  ?>
           <p><?= get_post_custom_values('date', get_the_ID() )[0]; ?></p>
           <a class="no-underline" href="<?=the_permalink()?>"<?= the_excerpt(); ?></a>
+          <?php get_template_part('template-parts/tickets-btn'); ?>
         </div>
       </div>
 <?php endforeach ?>

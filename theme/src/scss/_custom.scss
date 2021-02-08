@@ -1,3 +1,4 @@
+@import './colors';
 @import "~fontsource-cuprum/cyrillic-ext.css";
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
@@ -37,3 +38,4 @@
 @import './chips';
 @import './video';
 @import './gutenberg';
+@import './pages/singular.scss'

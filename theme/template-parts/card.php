@@ -3,7 +3,6 @@
 <div class="badges d-block">
 <?php the_tags('',''); ?>
 </div>
-
 <a href="<?php esc_url( the_permalink() ); ?>" class="card-content bg-dark text-white d-flex">
   <?php the_post_thumbnail( 'medium_large', array ( 'class' => 'card-img' ) ); ?>
   <!--<img class="card-img" src="<?= get_template_directory_uri() . '/img/04.jpg' ?>" alt="">-->
@@ -15,5 +14,7 @@
     </p>
   </div>
 </a>
+
+<?php get_template_part('template-parts/tickets-btn'); ?>
 
 </div>
