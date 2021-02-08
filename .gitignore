@@ -6,3 +6,4 @@ dump
 info.php
 plugins
 uploads
+docker-entrypoint-initdb.d/*
